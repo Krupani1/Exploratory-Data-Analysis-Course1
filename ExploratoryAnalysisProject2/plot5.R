@@ -25,7 +25,7 @@ aggregatedTotalByYear <- aggregate(Emissions ~ year, subsetNEI, sum)
 
 
 
-png("plot25.png", width=840, height=480)
+png("plot5.png", width=840, height=480)
 #qplot(year, Emissions, data = aggregatedTotalByYear, geom= "line") + theme_gray() + ggtitle("Motor Vehicle-Related Emissions in Baltimore County") + xlab("Year") + ylab("Emission Levels")
 
 g <- ggplot(aggregatedTotalByYear, aes(factor(year), Emissions))
